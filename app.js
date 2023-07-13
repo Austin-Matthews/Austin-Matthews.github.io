@@ -1,9 +1,9 @@
 const navButton = document.querySelector('.nav-button');
 const navOpen = document.querySelector('.nav-open');
 
-const t1 = new TimelineLine({ paused: true, reversed: true });
+const tl = new TimelineLine({ paused: true, reversed: true });
 
-t1.to(".cover", 1, {
+tl.to(".cover", 1, {
     width: "60%",
     ease: Power2.easeOut
 })
@@ -35,13 +35,13 @@ t1.to(".cover", 1, {
     );
 
 navButton.addEventListener("click", () => {
-    if(t1.iasActive()){
+    if(tl.isActive()){
         e.preventDefault();
         e.stopimmediatePropagation();
         return false;
     }
 
-    toggleTween(t1)
+    toggleTween(tl)
 });
 
 
