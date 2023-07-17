@@ -1,7 +1,7 @@
 const navButton = document.querySelector('.nav-button');
 const navOpen = document.querySelector('.nav-open');
 
-const tl = new TimelineLine({ paused: true, reversed: true });
+const tl = new TimelineLite({ paused: true, reversed: true });
 
 tl.to(".cover", 1, {
     width: "60%",
