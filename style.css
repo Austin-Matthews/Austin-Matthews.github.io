@@ -92,7 +92,7 @@ nav {
 .nav-images{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 1%;
 }
 .aboutMe ul li a{
     text-decoration: none;
