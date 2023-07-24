@@ -92,6 +92,7 @@ nav {
 .nav-images{
     display: inline;
     justify-content: space-around;
+    height: auto;
     width: 100%;
 }
 .aboutMe ul li a{
