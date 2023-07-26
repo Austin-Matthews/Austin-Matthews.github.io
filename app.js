@@ -1,5 +1,6 @@
 const navButton = document.querySelector('.nav-button');
 const navOpen = document.querySelector('.nav-open');
+const date = document.querySelector('cover-date');
 
 const tl = new TimelineLite({ paused: true, reversed: true });
 
@@ -40,7 +41,6 @@ navButton.addEventListener("click", () => {
         e.stopimmediatePropagation();
         return false;
     }
-
     toggleTween(tl)
 });
 
