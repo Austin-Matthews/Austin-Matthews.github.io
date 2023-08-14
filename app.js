@@ -1,6 +1,6 @@
 const navButton = document.querySelector('.nav-button');
 const navOpen = document.querySelector('.nav-open');
-const date = document.querySelector('cover-date');
+const date = document.querySelector('.cover-date');
 
 const tl = new TimelineLite({ paused: true, reversed: true });
 
@@ -16,6 +16,15 @@ tl.to(".cover", 1, {
             ease: Power2.easeOut
         },
         '-= 0.5'
+    )
+    .to(
+        '.cover-date',
+        0.5,
+        {
+            opacity: 0,
+            ease: Power2.easeOut
+        },
+        '-= 1.5'
     )
     .fromTo(
         '.nav-open',
