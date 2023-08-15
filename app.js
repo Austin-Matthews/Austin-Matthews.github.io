@@ -1,4 +1,6 @@
-const navButton = document.querySelector('.nav-button');
+const navAbout = document.querySelector('.nav-about');
+const navBlog = document.querySelector('.nav-blog');
+const navContact = document.querySelector('.nav-contact');
 const navOpen = document.querySelector('.nav-open');
 const date = document.querySelector('.cover-date');
 
@@ -44,7 +46,7 @@ tl.to(".cover", 1, {
         }
     );
 
-navButton.addEventListener("click", () => {
+navAbout.addEventListener("click", () => {
     if(tl.isActive()){
         e.preventDefault();
         e.stopimmediatePropagation();
